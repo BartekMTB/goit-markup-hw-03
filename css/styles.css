@@ -1,8 +1,55 @@
-body {
-  font-family: Roboto;
+:root {
+  --brand-color: #2196f3;
+  --brand-black: #212121;
+  --brand-background: #ffffff;
+  --brand-header: #757575;
+  --brand-backgroud2: #2f303a;
 }
 
-.logo {
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-black);
+  background: var(--brand-background);
+}
+
+header {
+  /*width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+*/
+  background: var(--brand-background);
+}
+
+.header-nav-a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.header-nav-a:hover,
+.header-nav-a:focus {
+  color: var(--brand-color);
+}
+
+.header-right-a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--brand-header);
+}
+.header-right-a:hover {
+  color: var(--brand-color);
+}
+
+.logo-blue {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -12,8 +59,222 @@ body {
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--brand-color);
 }
-.ust-poziomo {
-  display: inline;
+
+.logo-black {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--brand-black);
+}
+
+.sec-naglowek {
+  /*position: absolute;*/
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
+  background: var(--brand-backgroud2);
+}
+.sec-naglowek h1 {
+  /*position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;*/
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--brand-background);
+}
+.sec-naglowek button {
+  width: 200px;
+  height: 50px;
+
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  /*color czcionki nizej*/
+  color: var(--brand-background);
+}
+
+.sec-onas {
+  background: var(--brand-background);
+}
+
+.sec-onas h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sec-onas p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.sec-onas h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--brand-black);
+}
+
+.sec-zespol {
+  background: #f5f4fa;
+}
+
+.sec-zespol h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.sec-zespol p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.sec-zespol-pgrey {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.sec-zespol div {
+  background: var(--brand-background);
+}
+
+footer {
+  background-color: var(--brand-backgroud2);
+}
+
+.footer-a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  color: var(--brand-background);
+}
+
+.footer-a:hover {
+  color: var(--brand-color);
+}
+
+.portfolio-buttons button {
+  width: 121px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.portfolio-buttons button:hover {
+  width: 121px;
+  height: 38px;
+
+  background: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  /*color czcionki nizej*/
+  color: var(--brand-background);
+}
+.projekty div {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.projekty p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.projekty-p-grey {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
