@@ -21,21 +21,7 @@ header {
   background: var(--brand-background);
 }
 
-.header-nav-a {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-.header-nav-a:hover,
-.header-nav-a:focus {
-  color: var(--brand-color);
-}
-
-.header-right-a {
+header a {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -45,8 +31,12 @@ header {
 
   color: var(--brand-header);
 }
-.header-right-a:hover {
+header a:hover {
   color: var(--brand-color);
+}
+
+header nav a {
+  color: var(--brand-black);
 }
 
 .logo-blue {
@@ -203,7 +193,7 @@ footer {
   background-color: var(--brand-backgroud2);
 }
 
-.footer-a {
+footer a {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -215,10 +205,20 @@ footer {
   color: var(--brand-background);
 }
 
-.footer-a:hover {
+footer a:hover {
   color: var(--brand-color);
 }
 
+footer address a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--brand-header);
+}
 .portfolio-buttons button {
   width: 121px;
   height: 38px;
