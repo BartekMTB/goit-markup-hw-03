@@ -13,11 +13,13 @@ body {
 }
 
 header {
-  /*width: 1600px;
+  width: 1600px;
   height: 80px;
-  left: 0px;
+  /*left: 0px;
   top: 0px;
 */
+  display: flex;
+  align-items: center;
   background: var(--brand-background);
 }
 
@@ -117,6 +119,11 @@ header nav a {
   background: var(--brand-background);
 }
 
+.sec-onas ul {
+  display: flex;
+  align-items: center;
+}
+
 .sec-onas h6 {
   font-family: "Roboto";
   font-style: normal;
@@ -153,6 +160,10 @@ header nav a {
 
 .sec-zespol {
   background: #f5f4fa;
+}
+.sec-zespol ul {
+  display: flex;
+  align-items: center;
 }
 
 .sec-zespol h2 {
@@ -219,6 +230,11 @@ footer address a {
 
   color: var(--brand-header);
 }
+.portfolio-buttons ul {
+  display: flex;
+  align-items: center;
+}
+
 .portfolio-buttons button {
   width: 121px;
   height: 38px;
@@ -258,6 +274,10 @@ footer address a {
 .projekty div {
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+.projekty ul {
+  display: flex;
+  align-items: center;
 }
 
 .projekty p {
