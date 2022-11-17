@@ -10,7 +10,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-black);
   background: var(--brand-background);
-  width: 1600px;
 }
 
 /* zdefiniowanie brak kropki w ul globlanie */
@@ -18,14 +17,14 @@ ul {
   list-style-type: none;
 }
 
-header {
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+/* header {
+  display: flex;
+  flex-direction: row;
+} */
 
 header a {
   text-decoration: none;
@@ -34,7 +33,6 @@ header a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: var(--brand-header);
 }
 header a:hover {
@@ -49,10 +47,11 @@ header nav a {
 }
 
 header nav li {
-  margin-left: 46px;
+  margin: 0px 34px 0px 34px;
 }
 
 header nav ul {
+  padding-left: 0;
   display: flex;
   align-items: center;
 }
@@ -90,10 +89,10 @@ header nav ul {
   /*position: absolute;*/
   /* width: 1600px; */
   padding-top: 200px;
-  height: 600px;
-  display: flex;
+
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   /* justify-content: center; */
   /* left: 0px;
   top: 80px; */
@@ -147,8 +146,8 @@ header nav ul {
 
 .sec-onas ul {
   margin: 0 0 0 0;
-  display: flex;
-  align-items: center;
+  /*  display: flex;
+  align-items: center; */
 }
 
 .sec-onas h6 {
@@ -188,11 +187,13 @@ header nav ul {
 .sec-zespol {
   background: #f5f4fa;
 }
-.sec-zespol ul {
+/* .sec-zespol ul {
   display: flex;
   align-items: center;
+} */
+.sec-zespol ul {
+  background: #f5f4fa;
 }
-
 .sec-zespol h2 {
   font-style: normal;
   font-weight: 700;
@@ -200,6 +201,7 @@ header nav ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  background: #f5f4fa;
 }
 .sec-zespol p {
   font-style: normal;
@@ -257,10 +259,10 @@ footer address a {
 
   color: var(--brand-header);
 }
-.portfolio-buttons ul {
+/* .portfolio-buttons ul {
   display: flex;
   align-items: center;
-}
+} */
 
 .portfolio-buttons button {
   width: 121px;
@@ -302,11 +304,11 @@ footer address a {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.projekty ul {
+/* .projekty ul {
   display: flex;
   align-items: center;
   flex-flow: wrap;
-}
+} */
 
 .projekty p {
   font-style: normal;
@@ -325,4 +327,38 @@ footer address a {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+.container {
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 1200px;
+}
+
+.flex-horiz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-horiz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-projects {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
 }
