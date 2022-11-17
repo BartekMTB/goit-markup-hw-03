@@ -22,9 +22,9 @@ header {
   height: 80px;
   left: 0px;
   top: 0px;
-  padding-left: 250px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 header a {
@@ -41,9 +41,9 @@ header a:hover {
   color: var(--brand-color);
 }
 
-header nav {
+/* header nav {
   margin-left: 93px;
-}
+} */
 header nav a {
   color: var(--brand-black);
 }
@@ -57,9 +57,9 @@ header nav ul {
   align-items: center;
 }
 
-header div {
-  justify-items: auto;
-}
+/* header div {
+  margin-left: 50px;
+} */
 .logo-blue {
   font-family: "Raleway";
   font-style: normal;
@@ -88,10 +88,15 @@ header div {
 
 .sec-naglowek {
   /*position: absolute;*/
-  width: 1600px;
+  /* width: 1600px; */
+  padding-top: 200px;
   height: 600px;
-  left: 0px;
-  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* left: 0px;
+  top: 80px; */
 
   background: var(--brand-backgroud2);
 }
@@ -101,14 +106,13 @@ header div {
   height: 120px;
   left: 452px;
   top: 280px;*/
-
+  text-align: center;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   /* or 136% */
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -121,7 +125,7 @@ header div {
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -135,10 +139,12 @@ header div {
 }
 
 .sec-onas {
+  padding-top: 80px;
   background: var(--brand-background);
 }
 
 .sec-onas ul {
+  margin: 0 0 0 0;
   display: flex;
   align-items: center;
 }
