@@ -10,6 +10,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-black);
   background: var(--brand-background);
+  width: 1600px;
+}
+
+/* zdefiniowanie brak kropki w ul globlanie */
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -20,7 +26,6 @@ header {
 */
   display: flex;
   align-items: center;
-  background: var(--brand-background);
 }
 
 header a {
@@ -41,6 +46,10 @@ header nav a {
   color: var(--brand-black);
 }
 
+header nav ul {
+  display: flex;
+  align-items: center;
+}
 .logo-blue {
   font-family: "Raleway";
   font-style: normal;
@@ -278,6 +287,7 @@ footer address a {
 .projekty ul {
   display: flex;
   align-items: center;
+  flex-flow: wrap;
 }
 
 .projekty p {
