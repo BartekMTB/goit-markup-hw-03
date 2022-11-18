@@ -8,23 +8,28 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   color: var(--brand-black);
   background: var(--brand-background);
 }
 
-/* zdefiniowanie brak kropki w ul globlanie */
 ul {
   list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* header {
-  display: flex;
-  flex-direction: row;
-} */
+
+/* podkreslenie headera */
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
 
 header a {
   text-decoration: none;
@@ -38,27 +43,50 @@ header a {
 header a:hover {
   color: var(--brand-color);
 }
-
-/* header nav {
+header nav {
   margin-left: 93px;
-} */
+}
+
 header nav a {
   color: var(--brand-black);
 }
 
 header nav li {
-  margin: 0px 34px 0px 34px;
+  margin: 0px 23px 0px 23px;
 }
 
-header nav ul {
+header nav li:first-child {
+  margin-left: 0;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+header div {
+  margin-left: 371px;
+}
+
+header nav ul,
+header div ul {
   padding-left: 0;
   display: flex;
   align-items: center;
 }
 
-/* header div {
-  margin-left: 50px;
-} */
+header div li {
+  margin: 0px 25px 0px 25px;
+}
+
+header div li:first-child {
+  margin-left: 0;
+}
+header div li:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  margin-left: 15px;
+}
 .logo-blue {
   font-family: "Raleway";
   font-style: normal;
@@ -86,25 +114,9 @@ header nav ul {
 }
 
 .sec-naglowek {
-  /*position: absolute;*/
-  /* width: 1600px; */
-  padding-top: 200px;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* justify-content: center; */
-  /* left: 0px;
-  top: 80px; */
-
   background: var(--brand-backgroud2);
 }
 .sec-naglowek h1 {
-  /*position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;*/
   margin-top: 0;
   margin-bottom: 30px;
   text-align: center;
@@ -151,8 +163,6 @@ header nav ul {
 }
 
 .sec-onas h6 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -161,8 +171,6 @@ header nav ul {
 }
 
 .sec-onas p {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -259,10 +267,6 @@ footer address a {
 
   color: var(--brand-header);
 }
-/* .portfolio-buttons ul {
-  display: flex;
-  align-items: center;
-} */
 
 .portfolio-buttons button {
   width: 121px;
@@ -277,6 +281,16 @@ footer address a {
   letter-spacing: 0.03em;
   background: #f5f4fa;
   border-radius: 4px;
+}
+.portfolio-buttons ul li {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.portfolio-buttons ul li:first-child {
+  margin-left: 0px;
+}
+.portfolio-buttons ul li:last-child {
+  margin-right: 0px;
 }
 
 .portfolio-buttons button:hover {
@@ -329,15 +343,14 @@ footer address a {
   color: #757575;
 }
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0 auto; /* wybiera wolna przestrzen i rowno ustawia po polowie jako margines */
   width: 1200px;
 }
 
-.flex-horiz {
+.flex-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .flex-horiz {
