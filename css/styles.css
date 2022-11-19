@@ -18,6 +18,9 @@ ul {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
+P {
+  margin: 0 0 0 0;
+}
 
 section {
   padding-top: 94px;
@@ -55,6 +58,10 @@ header nav li {
   margin: 0px 23px 0px 23px;
 }
 
+/* .menu > .item:not(:last-child) {
+  margin-right: 10px;
+} */
+
 header nav li:first-child {
   margin-left: 0;
 }
@@ -84,6 +91,10 @@ header div li:last-child {
   margin-right: 0;
 }
 
+/* .menu > .item:not(:last-child) {
+  margin-right: 10px;
+} */
+
 .logo {
   margin-left: 15px;
 }
@@ -93,6 +104,7 @@ header div li:last-child {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  text-decoration: none;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -168,6 +180,7 @@ header div li:last-child {
 }
 
 .sec-onas h6 {
+  margin: 0 0 0 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -176,6 +189,8 @@ header div li:last-child {
 }
 
 .sec-onas p {
+  margin-top: 10px;
+  margin-bottom: 94px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -187,6 +202,8 @@ header div li:last-child {
 }
 
 .sec-onas h2 {
+  margin: 0 0 50px 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -227,6 +244,7 @@ header div li:last-child {
   letter-spacing: 0.03em;
 }
 .sec-zespol-pgrey {
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -241,19 +259,26 @@ header div li:last-child {
 .sec-zespol div {
   background: var(--brand-background);
 }
+.sec-zespol-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 footer {
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--brand-backgroud2);
 }
 
-footer a {
+.footer-a {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-
+  margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--brand-background);
 }
@@ -271,6 +296,13 @@ footer address a {
   letter-spacing: 0.02em;
 
   color: var(--brand-header);
+}
+footer address a:not(:first-child) {
+  margin-top: 9px;
+}
+
+.portfolio-buttons {
+  border: 0;
 }
 
 .portfolio-buttons button {
@@ -290,6 +322,7 @@ footer address a {
 .portfolio-buttons ul li {
   margin-left: 4px;
   margin-right: 4px;
+  margin-bottom: 56px;
 }
 .portfolio-buttons ul li:first-child {
   margin-left: 0px;
@@ -297,6 +330,11 @@ footer address a {
 .portfolio-buttons ul li:last-child {
   margin-right: 0px;
 }
+/* .menu > .item:not(:last-child) {
+  margin-right: 10px;
+} */
+
+/* flex border?   gap: 10px;  */
 
 .portfolio-buttons button:hover {
   width: 121px;
@@ -321,13 +359,20 @@ footer address a {
 }
 .projekty div {
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 /* .projekty ul {
   display: flex;
   align-items: center;
   flex-flow: wrap;
 } */
+.projekty ul li div div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* background-color: tomato; */
+  border: 1px solid #eeeeee;
+}
 
 .projekty p {
   font-style: normal;
@@ -337,6 +382,7 @@ footer address a {
 }
 
 .projekty-p-grey {
+  margin-top: 4px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -362,6 +408,7 @@ footer address a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .flex-center {
@@ -378,5 +425,6 @@ footer address a {
 .flex-projects {
   display: flex;
   align-items: center;
+  gap: 30px 30px;
   flex-flow: wrap;
 }
