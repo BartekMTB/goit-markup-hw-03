@@ -267,7 +267,7 @@ header div li:last-child {
 }
 
 footer {
-  padding-left: 15px;
+  padding-left: 15px; /* moze lepiej dodac margin z lewej? */
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--brand-backgroud2);
@@ -361,12 +361,9 @@ footer address a:not(:first-child) {
 }
 .projekty div {
   background: #ffffff;
+  line-height: 0.15; /* zmiejsza odstep zdjecie ->box dolny */
 }
-/* .projekty ul {
-  display: flex;
-  align-items: center;
-  flex-flow: wrap;
-} */
+
 .projekty ul li div div {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -426,7 +423,8 @@ footer address a:not(:first-child) {
 
 .flex-projects {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
   gap: 30px 30px;
-  flex-flow: wrap;
 }
